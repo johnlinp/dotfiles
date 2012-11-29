@@ -1,0 +1,35 @@
+Host 217
+Hostname linux8.csie.org
+User r01944018
+Port 22
+
+Host disa
+Hostname disa.csie.org
+User averangeall
+Port 22
+
+Host agent
+Hostname agent.csie.ntu.edu.tw
+User averangeall
+Port 22
+
+Host cslin
+Hostname 140.134.32.129
+User cslin
+Port 33333
+
+Host sinica
+Hostname 140.109.21.253
+User averangeall
+Port 22
+
+Host daisy
+Hostname daisy.csie.org
+User averangeall
+Port 22
+
+Host averangeall
+Hostname averangeall.csie.org
+User averangeall
+Port 2266
+
