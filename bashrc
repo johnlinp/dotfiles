@@ -118,6 +118,7 @@ PATH=$PATH:~/something/scripts
 alias pingg='ping 8.8.8.8'
 alias giggle='giggle 2>/dev/null'
 alias htc='sudo /opt/android-sdk-linux/platform-tools/reset-android-device.sh'
+alias grep='grep --color=auto --line-number'
 
 # git branch
 function git_branch {
