@@ -110,6 +110,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias q='exit'
 alias du='du -sh'
+alias grep='grep --color=auto --line-number'
 
 # my scripts
 PATH=$PATH:~/something/scripts
@@ -118,7 +119,7 @@ PATH=$PATH:~/something/scripts
 alias pingg='ping 8.8.8.8'
 alias giggle='giggle 2>/dev/null'
 alias htc='sudo /opt/android-sdk-linux/platform-tools/reset-android-device.sh'
-alias grep='grep --color=auto --line-number'
+alias home='wakeonlan -i 1.34.139.61 -p 2266 4c:72:b9:63:34:6e'
 
 # git branch
 function git_branch {
@@ -128,4 +129,5 @@ function git_branch {
 
 PS1='\u@\h:\W$(git_branch)\$ '
 
+export EDITOR=vim
 
