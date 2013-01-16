@@ -3,10 +3,13 @@
 	email = averangeall@gmail.com
 [giggle]
 	main-window-maximized = false
-	main-window-geometry = 700x550+0+24
+	main-window-geometry = 700x550+369+445
 	main-window-view = HistoryView
 	history-view-vpane-position = 252
 [core]
 	editor = vim
 [color]
 	ui = true
+[alias]
+    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+
