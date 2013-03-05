@@ -20,3 +20,8 @@ Hostname averangeall.csie.org
 User averangeall
 Port 2266
 
+Host gardenia
+Hostname gardenia.csie.ntu.edu.tw
+User root
+Port 22
+
