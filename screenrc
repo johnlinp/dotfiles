@@ -1,0 +1,20 @@
+vbell off
+autodetach on
+startup_message off
+shell -bash
+defscrollback 10000
+termcapinfo xterm* ti@:te@
+#allpartial off
+#defc1 off
+#encoding utf8 utf8
+
+caption always "%{=u .d} %-w%<%{=ub .B}%n %t%{=u .d}%+w "
+hardstatus alwaysignore 
+#hardstatus alwayslastline "%{= .K} [%l]%<%=%{= .W}@%H %=%{= .y} %Y %M %d(%D) %{= .m} %C %A"
+
+bindkey "^[[C" next
+bindkey "^[[D" prev
+
+bindkey "^[[1;5C" next
+bindkey "^[[1;5D" prev
+
