@@ -131,4 +131,5 @@ function git_branch {
 PS1='\u@\h:\W$(git_branch)\$ '
 
 export EDITOR=vim
+complete -W "desktop htdocs images music videos nothing something uptu" coming
 
