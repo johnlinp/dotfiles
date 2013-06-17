@@ -110,7 +110,7 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias q='exit'
 alias du='du -sh'
-alias grep='grep --color=auto --line-number'
+alias grep='grep --color=auto'
 
 # my scripts
 PATH=$PATH:~/something/scripts
@@ -133,3 +133,6 @@ PS1='\u@\h:\W$(git_branch)\$ '
 export EDITOR=vim
 complete -W "desktop htdocs images music videos nothing something uptu" coming
 which easyps > /dev/null && easyps random-play -k
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
