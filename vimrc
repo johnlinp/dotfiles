@@ -180,4 +180,5 @@ set nu
 set shiftwidth=4
 set softtabstop=4
 set nobackup
+autocmd BufNewFile,BufRead *.txt,*.tex setlocal spell
 "hi MatchParen ctermbg=0
