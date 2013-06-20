@@ -122,6 +122,20 @@ alias htc='sudo /opt/android-sdk-linux/platform-tools/reset-android-device.sh'
 alias home='wakeonlan -i 1.34.139.61 -p 2266 4c:72:b9:63:34:6e'
 alias shutup='dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 
+function onetex {
+    if [ "$1" != "" ]
+    then
+        filename=$1
+    else
+        filename=main
+    fi
+    xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
+    bibtex $filename.tex 2>&1 > /dev/null
+    xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
+    xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
+    evince $filename.pdf 2>&1 > /dev/null
+}
+
 # git branch
 function git_branch {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
