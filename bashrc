@@ -130,7 +130,7 @@ function onetex {
         filename=main
     fi
     xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
-    bibtex $filename.tex 2>&1 > /dev/null
+    bibtex $filename.aux 2>&1 > /dev/null
     xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
     xelatex -interaction=nonstopmode $filename.tex 2>&1 > /dev/null
     evince $filename.pdf 2>&1 > /dev/null
