@@ -113,7 +113,7 @@ alias du='du -sh'
 alias grep='grep --color=auto'
 
 # my scripts
-PATH=$PATH:~/something/scripts
+PATH=$PATH:~/coding/scripts
 
 # some others
 alias pingg='ping 8.8.8.8'
