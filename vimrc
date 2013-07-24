@@ -182,4 +182,5 @@ set softtabstop=4
 set nobackup
 autocmd BufNewFile,BufRead *.txt,*.tex setlocal spell
 xnoremap p pgvy
+set timeoutlen=1000 ttimeoutlen=0
 "hi MatchParen ctermbg=0
