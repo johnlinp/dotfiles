@@ -25,3 +25,8 @@ Hostname gardenia.csie.ntu.edu.tw
 User root
 Port 22
 
+Host fankudo
+Hostname fankudo.com
+User root
+Port 22
+
