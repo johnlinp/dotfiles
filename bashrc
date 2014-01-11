@@ -129,15 +129,9 @@ function onetex {
     else
         filename=main
     fi
-    xelatex -interaction=nonstopmode $filename.tex
-    test $? -eq 0 || return
+    latex $filename.tex
     bibtex $filename.aux
-    test $? -eq 0 || return
-    xelatex -interaction=nonstopmode $filename.tex
-    test $? -eq 0 || return
-    xelatex -interaction=nonstopmode $filename.tex
-    test $? -eq 0 || return
-    evince $filename.pdf
+    pdflatex $filename.tex
 }
 
 # git branch
