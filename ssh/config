@@ -2,8 +2,8 @@ Host 217
 Hostname linux8.csie.org
 User r01944018
 
-Host disa daisy agent lime
-Hostname %h.csie.org
+Host disa agent gardenia
+Hostname %h.csie.ntu.edu.tw
 User averangeall
 
 Host cslin
@@ -19,11 +19,6 @@ Host averangeall
 Hostname averangeall.csie.org
 User averangeall
 Port 2266
-
-Host gardenia
-Hostname gardenia.csie.ntu.edu.tw
-User root
-Port 22
 
 Host fankudo
 Hostname fankudo.com
