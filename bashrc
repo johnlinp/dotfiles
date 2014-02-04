@@ -108,16 +108,15 @@ fi
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
-alias q='exit'
-alias du='du -sh'
 alias grep='grep --color=auto'
 
 # my scripts
 PATH=$PATH:~/coding/scripts
 
 # some others
+alias q='exit'
+alias du='du -sh'
 alias pingg='ping 8.8.8.8'
-alias giggle='giggle 2>/dev/null'
 alias htc='sudo /opt/android-sdk-linux/platform-tools/reset-android-device.sh'
 alias home='wakeonlan -i 1.34.139.61 -p 2266 4c:72:b9:63:34:6e'
 alias shutup='dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
