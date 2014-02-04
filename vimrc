@@ -180,7 +180,7 @@ set nu
 set shiftwidth=4
 set softtabstop=4
 set nobackup
-autocmd BufNewFile,BufRead *.tex setlocal spell
+autocmd BufNewFile,BufRead *.tex setlocal tw=100
 xnoremap p pgvy
 set timeoutlen=1000 ttimeoutlen=0
 "hi MatchParen ctermbg=0
