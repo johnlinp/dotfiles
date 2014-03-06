@@ -129,9 +129,10 @@ function onetex {
     else
         filename=main
     fi
-    latex $filename.tex
-    bibtex $filename.aux
-    pdflatex $filename.tex
+    pdflatex $filename
+    bibtex $filename
+    pdflatex $filename
+    pdflatex $filename
 }
 
 # git branch
