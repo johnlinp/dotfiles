@@ -148,3 +148,11 @@ which easyps > /dev/null && easyps random-play -k
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# android vm development
+function ad {
+    cd ~/coding/leisure/android/
+    . build/envsetup.sh
+    lunch aosp_arm-eng
+}
+
