@@ -1,17 +1,11 @@
 [user]
-	name = averangeall
-	email = averangeall@gmail.com
-[giggle]
-	main-window-maximized = false
-	main-window-geometry = 700x550+369+445
-	main-window-view = HistoryView
-	history-view-vpane-position = 252
+    name = averangeall
+    email = averangeall@gmail.com
 [core]
-	editor = vim
+    editor = vim
 [color]
-	ui = true
+    ui = true
 [alias]
     graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
-
 [push]
-	default = matching
+    default = matching
