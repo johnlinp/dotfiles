@@ -40,3 +40,7 @@ if has('mouse')
   set mouse=a
 endif
 
+" highlight trailing whitespaces
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
