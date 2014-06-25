@@ -25,3 +25,13 @@ Hostname 198.57.200.193
 User fankudo
 Port 22
 
+Host p1
+Hostname ptt.cc
+User bbsu
+Port 22
+
+Host p2
+Hostname ptt2.cc
+User bbsu
+Port 22
+
