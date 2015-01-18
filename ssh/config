@@ -15,11 +15,6 @@ Host sinica
 Hostname 140.109.21.253
 User averangeall
 
-Host averangeall
-Hostname averangeall.csie.org
-User averangeall
-Port 2266
-
 Host fankudo
 Hostname 198.57.200.193
 User fankudo
