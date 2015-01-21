@@ -9,7 +9,6 @@ set background=dark
 set incsearch
 
 " about tabs
-set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
