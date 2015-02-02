@@ -43,3 +43,7 @@ endif
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+" highlight search
+set hlsearch
+highlight Search cterm=NONE ctermfg=grey ctermbg=blue
+
