@@ -2,6 +2,6 @@
 
 Update config by typing:
 
-    ./deploy.sh
+    python deploy.py
 
 and everything is done.
