@@ -1,11 +1,13 @@
 [user]
     name = johnlinp
     email = johnlinp@gmail.com
+[merge]
+	tool = vimdiff
 [core]
-    editor = vim
+	editor = vim
 [color]
-    ui = true
+	ui = true
 [alias]
-    graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
 [push]
-    default = matching
+	default = matching
