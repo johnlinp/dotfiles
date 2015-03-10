@@ -47,8 +47,8 @@ match ExtraWhitespace /\s\+$/
 set hlsearch
 highlight Search cterm=NONE ctermfg=grey ctermbg=blue
 
-" ctags
-set tags=tags
+" ctags (the semicolon is important!)
+set tags=tags;
 
 " Gblame
 if filereadable($HOME."/fugitive.vim")
@@ -57,4 +57,8 @@ endif
 
 " markdown syntax
 autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
+
+" display filename on the bottom
+set statusline=%F
+set laststatus=2
 
