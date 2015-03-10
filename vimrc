@@ -47,3 +47,14 @@ match ExtraWhitespace /\s\+$/
 set hlsearch
 highlight Search cterm=NONE ctermfg=grey ctermbg=blue
 
+" ctags
+set tags=tags
+
+" Gblame
+if filereadable($HOME."/fugitive.vim")
+	source ~/fugitive.vim
+endif
+
+" markdown syntax
+autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
+
