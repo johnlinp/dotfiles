@@ -59,6 +59,6 @@ endif
 autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
 
 " display filename on the bottom
-set statusline=%F
+set statusline=%F\ %m%=line:\ %l\ of\ %L,\ col:\ %c\ (%P)
 set laststatus=2
 

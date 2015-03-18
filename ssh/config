@@ -11,22 +11,15 @@ Hostname 140.134.32.129
 User cslin
 Port 33333
 
-Host sinica
-Hostname 140.109.21.253
-User averangeall
-
-Host fankudo
-Hostname 198.57.200.193
-User fankudo
-Port 22
-
 Host p1
 Hostname ptt.cc
 User bbsu
-Port 22
 
 Host p2
 Hostname ptt2.cc
 User bbsu
-Port 22
+
+Host ds
+Hostname 10.13.21.144
+User root
 
