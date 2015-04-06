@@ -23,3 +23,7 @@ Host ds
 Hostname 10.13.21.144
 User root
 
+Host work
+Hostname 10.13.21.145
+User jlin
+
