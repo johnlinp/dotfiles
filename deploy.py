@@ -59,10 +59,10 @@ def deploy_single(entry, start, log):
 		if is_already_deployed(entry):
 			return
 		if is_dst_exist(entry):
-			print 'backup', entry
+			print('backup', entry)
 			log['backup'] += 1
 			backup_dst(entry)
-		print 'deploy', entry
+		print('deploy', entry)
 		link_entry(entry)
 		log['deploy'] += 1
 	elif os.path.isdir(entry):
@@ -81,9 +81,9 @@ def deploy_many(entries, start, log):
 
 def main(argv):
 	if len(argv) == 1:
-		print 'usage:'
-		print '    python deploy.py all'
-		print '    python deploy.py <config1> <config2> <config3> ...'
+		print('usage:')
+		print('    python deploy.py all')
+		print('    python deploy.py <config1> <config2> <config3> ...')
 		return
 	elif argv[1] == 'all':
 		entries = glob.glob('*')
@@ -94,9 +94,9 @@ def main(argv):
 	deploy_many(entries, '', log)
 
 	if not log['deploy']:
-		print 'nothing happened'
+		print('nothing happened')
 	if log['backup']:
-		print 'the backup files are in', get_backup_dir()
+		print('the backup files are in', get_backup_dir())
 
 
 if __name__ == '__main__':
