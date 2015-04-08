@@ -1,6 +1,6 @@
 [user]
-    name = johnlinp
-    email = johnlinp@gmail.com
+	name = johnlinp
+	email = johnlinp@gmail.com
 [merge]
 	tool = vimdiff
 [core]
