@@ -16,8 +16,8 @@ then
     . /etc/bash_completion
 fi
 
-# my scripts
-PATH=$PATH:~/coding/scripts
+# some more binaries and scripts
+PATH=$PATH:~/bin
 
 # git branch
 function git_branch {
