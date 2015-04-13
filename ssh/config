@@ -23,7 +23,11 @@ Host ds
 Hostname 10.13.21.144
 User root
 
-Host work
+Host justin
 Hostname 10.13.21.145
-User jlin
+User root
+
+Host jacky
+Hostname 10.13.21.146
+User root
 
