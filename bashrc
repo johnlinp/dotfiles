@@ -26,7 +26,7 @@ function git_branch {
 }
 
 # simple prompt
-PS1='\u@\h:\W$(git_branch)\$ '
+PS1='\u@\[\033[01;34m\]\h\[\033[00m\]:\W$(git_branch)\$ '
 
 # my favorite editor
 export EDITOR=vim
