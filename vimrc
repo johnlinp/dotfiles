@@ -62,3 +62,6 @@ autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
 set statusline=%F\ %m%=line:\ %l\ of\ %L,\ col:\ %c\ (%P)
 set laststatus=2
 
+" smart case search needs to enable both smartcase and ignorecase
+set smartcase
+set ignorecase
