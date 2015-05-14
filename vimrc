@@ -45,7 +45,6 @@ match ExtraWhitespace /\s\+$/
 
 " highlight search
 set hlsearch
-highlight Search cterm=NONE ctermfg=grey ctermbg=blue
 
 " ctags (the semicolon is important!)
 set tags=tags;

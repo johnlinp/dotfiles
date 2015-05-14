@@ -34,9 +34,6 @@ export EDITOR=vim
 # data backup
 complete -W "desktop htdocs images music videos nothing something uptu" coming
 
-# shut down alarm
-which easyps > /dev/null && easyps random-play -k
-
 # android vm development
 function ad {
     cd ~/coding/leisure/android/
