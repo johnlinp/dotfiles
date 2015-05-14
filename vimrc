@@ -64,3 +64,8 @@ set laststatus=2
 " smart case search needs to enable both smartcase and ignorecase
 set smartcase
 set ignorecase
+
+" make tabs visible
+set list
+set listchars=tab:>\ 
+highlight SpecialKey ctermfg=0 guifg=gray
