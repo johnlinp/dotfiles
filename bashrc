@@ -5,7 +5,6 @@ alias rm='rm -i'
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias grep='grep --color=auto'
-alias q='exit'
 alias du='du -sh'
 alias pingg='ping 8.8.8.8'
 alias shutup='dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
@@ -31,21 +30,17 @@ function git_branch {
 # simple prompt
 PS1='\u@\[\033[01;34m\]\h\[\033[00m\]:\W$(git_branch)\$ '
 
-# my favorite editor
-export EDITOR=vim
-
-# data backup
-complete -W "desktop htdocs images music videos nothing something uptu" coming
-
 # android vm development
 function ad {
     cd ~/coding/leisure/android/
     . build/envsetup.sh
     lunch aosp_arm-eng
-    export PATH=~/bin:$PATH
 }
 
+# work from home
 function syno-route {
+	sudo true
+	nmcli con up id Synology
 	sudo route del default
 	sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.2.1 dev eth0
 	sudo route add -net 10.0.0.0 netmask 255.0.0.0 dev ppp0
