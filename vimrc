@@ -49,11 +49,6 @@ set hlsearch
 " ctags (the semicolon is important!)
 set tags=tags;
 
-" Gblame
-if filereadable($HOME."/fugitive.vim")
-	source ~/fugitive.vim
-endif
-
 " markdown syntax
 autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
 

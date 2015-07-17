@@ -11,6 +11,7 @@ alias pingg='ping 8.8.8.8'
 alias shutup='dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 alias pacman='pacman --color=auto'
 alias vi='vim'
+alias index='ctags -R --sort=foldcase .; mkid'
 
 # auto completion
 if [ -f /etc/bash_completion ]
@@ -64,3 +65,13 @@ function onetex {
     pdflatex $filename
 }
 
+# ack + vim quick fix
+function fix {
+	ack $1 -w > /tmp/x
+	if [ -s /tmp/x ]
+	then
+		vim -q /tmp/x -c copen
+	else
+		echo $1: not found
+	fi
+}
