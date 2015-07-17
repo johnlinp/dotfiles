@@ -57,6 +57,9 @@ endif
 " markdown syntax
 autocmd BufNewFile,BufRead *.md setlocal syntax=markdown
 
+" makefile syntax
+autocmd BufNewFile,BufRead Makefile.inc setlocal syntax=make
+
 " display filename on the bottom
 set statusline=%F\ %m%=line:\ %l\ of\ %L,\ col:\ %c\ (%P)
 set laststatus=2
@@ -69,3 +72,6 @@ set ignorecase
 set list
 set listchars=tab:>\ 
 highlight SpecialKey ctermfg=0 guifg=gray
+
+" set max tab limit
+set tabpagemax=100
