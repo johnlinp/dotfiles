@@ -1,0 +1,37 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+
+z40=0000000000000000000000000000000000000000
+
+IFS=' '
+while read local_ref local_sha remote_ref remote_sha
+do
+	if [ "$local_sha" = $z40 ]
+	then
+		# Handle delete
+		:
+	else
+		if [ "$remote_sha" = $z40 ]
+		then
+			# New branch, examine all commits
+			range="$local_sha"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_sha..$local_sha"
+		fi
+
+		# Check for reviewer
+		count_reviews=`git rev-list --count --grep '^Reviewer' "$range"`
+		count_all=`git rev-list --count "$range"`
+		echo "\033[33mThere are $count_all commits and $count_reviews reviews.\033[m"
+		if [ $count_reviews != $count_all ]
+		then
+			echo "\033[31mDid you forget to add reviewers in your commit message?\033[m"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
