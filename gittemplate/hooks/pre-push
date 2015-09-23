@@ -25,10 +25,10 @@ do
 		# Check for reviewer
 		count_reviews=`git rev-list --count --grep '^Reviewer' "$range"`
 		count_all=`git rev-list --count "$range"`
-		echo "\033[33mThere are $count_all commits and $count_reviews reviews.\033[m"
+		echo -e "\033[33mThere are $count_all commits and $count_reviews reviews.\033[m"
 		if [ $count_reviews != $count_all ]
 		then
-			echo "\033[31mDid you forget to add reviewers in your commit message?\033[m"
+			echo -e "\033[31mDid you forget to add reviewers in your commit message?\033[m"
 			exit 1
 		fi
 	fi
