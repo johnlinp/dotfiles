@@ -70,3 +70,6 @@ highlight SpecialKey ctermfg=0 guifg=gray
 
 " set max tab limit
 set tabpagemax=100
+
+" auto indent
+set cindent

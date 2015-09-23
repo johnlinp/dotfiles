@@ -11,7 +11,7 @@ alias pingg='ping 8.8.8.8'
 alias shutup='dbus-send --system --print-reply --dest=org.freedesktop.ConsoleKit /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop'
 alias pacman='pacman --color=auto'
 alias vi='vim'
-alias index='ctags -R --sort=foldcase .; mkid'
+alias index='(ctags -R --sort=foldcase .; mkid)'
 
 # auto completion
 if [ -f /etc/bash_completion ]
