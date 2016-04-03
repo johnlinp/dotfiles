@@ -1,3 +1,16 @@
+" Vundle
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'easymotion/vim-easymotion'
+call vundle#end()
+filetype plugin indent on
+
 " basic settings
 set number
 set nobackup
