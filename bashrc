@@ -44,6 +44,7 @@ function syno-route {
 	sudo route del default
 	sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.2.1 dev eth0
 	sudo route add -net 10.0.0.0 netmask 255.0.0.0 dev ppp0
+	sudo route add -net 192.168.252.0 netmask 255.255.254.0 dev ppp0
 }
 
 # latex
