@@ -19,10 +19,6 @@ Host p2
 Hostname ptt2.cc
 User bbsu
 
-Host jude
-Hostname 10.13.21.147
-User root
-
 Host jacky
-Hostname 10.13.21.144
+Hostname 10.12.8.64
 User root
