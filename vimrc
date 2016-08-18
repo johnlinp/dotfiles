@@ -82,3 +82,12 @@ set tabpagemax=100
 
 " auto indent
 set cindent
+
+" faster easymotion
+map <SPACE> <Plug>(easymotion-bd-w)
+
+" set cursor margin
+set scrolloff=10
+
+" bash-like filename completion
+set wildmode=longest,list
