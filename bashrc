@@ -53,11 +53,12 @@ function onetex {
 
 # ack + vim quick fix
 function fix {
-	ack $1 -w > /tmp/x
-	if [ -s /tmp/x ]
-	then
-		vim -q /tmp/x -c copen
-	else
-		echo $1: not found
-	fi
+    FILENAME=/tmp/fix.$USER
+    ag -sw $1 > $FILENAME
+    if [ -s $FILENAME ]
+    then
+        vim -q $FILENAME -c copen -c "/\<$1\>"
+    else
+        echo $1: not found
+    fi
 }
