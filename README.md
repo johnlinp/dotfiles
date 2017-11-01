@@ -2,6 +2,6 @@
 
 Update config by typing:
 
-    python deploy.py
+    ./deploy.py all
 
 and everything is done.
