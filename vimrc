@@ -9,6 +9,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'chrisbra/csv.vim'
+Plugin 'dhruvasagar/vim-table-mode'
 call vundle#end()
 filetype plugin indent on
 
