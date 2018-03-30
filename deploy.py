@@ -84,8 +84,8 @@ def deploy_many(entries, start, log):
 def main(argv):
 	if len(argv) == 1:
 		print('usage:')
-		print('    python deploy.py all')
-		print('    python deploy.py <config1> <config2> <config3> ...')
+		print('    ./deploy.py all')
+		print('    ./deploy.py <config1> <config2> <config3> ...')
 		return
 	elif argv[1] == 'all':
 		entries = glob.glob('*')
