@@ -23,8 +23,8 @@ PATH=$PATH:~/bin
 
 # git branch
 function git_branch {
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || return;
-    echo " ("${ref#refs/heads/}") ";
+    REF=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    [ "$?" == "0" ] && echo " ($REF)"
 }
 
 # simple prompt
