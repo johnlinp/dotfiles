@@ -49,10 +49,10 @@ function onetex {
     pdflatex $filename
 }
 
-# ack + vim quick fix
+# ag + vim quick fix
 function fix {
     FILENAME=/tmp/fix.$USER
-    ag -sw $1 > $FILENAME
+    ag -sw "$1" > $FILENAME
     if [ -s $FILENAME ]
     then
         vim -q $FILENAME -c copen -c "/\<$1\>"
