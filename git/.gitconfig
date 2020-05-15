@@ -8,6 +8,8 @@
 [color]
 	ui = true
 [alias]
-	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+	graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short-local
 [push]
 	default = current
+[log]
+	date = iso-local
