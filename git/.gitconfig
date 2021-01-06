@@ -13,3 +13,5 @@
 	default = current
 [log]
 	date = iso-local
+[pull]
+	rebase = true
